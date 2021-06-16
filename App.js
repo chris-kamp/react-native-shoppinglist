@@ -43,14 +43,14 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Header title="Shopping List" />
-      <AddItem addItem={addItem} />
+      <Header title="SHOPPING LIST" />
       <FlatList
         data={items}
         renderItem={({item}) => (
           <ListItem item={item} deleteItem={deleteItem} />
         )}
       />
+      <AddItem addItem={addItem} />
     </View>
   );
 };
@@ -58,6 +58,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#020723',
   },
 });
 

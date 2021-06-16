@@ -15,6 +15,7 @@ const AddItem = ({title, addItem}) => {
     <View>
       <TextInput
         placeholder="Add Item..."
+        placeholderTextColor="#020723"
         style={styles.input}
         onChangeText={onChange}
       />
@@ -32,14 +33,15 @@ const styles = StyleSheet.create({
     height: 60,
     padding: 8,
     fontSize: 16,
+    backgroundColor: '#DDEEFF',
   },
   btn: {
-    backgroundColor: '#c2bad8',
+    backgroundColor: '#AEEEFF',
     padding: 9,
     margin: 5,
   },
   btnText: {
-    color: 'darkslateblue',
+    color: '#020723',
     fontSize: 20,
     textAlign: 'center',
   },
